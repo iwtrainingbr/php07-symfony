@@ -1,0 +1,19 @@
+category_get:
+  controller: App\Controller\Api\CategoryController::get
+  path: /api/categorias
+  methods: ['GET']
+
+category_post:
+  controller: App\Controller\Api\CategoryController::post
+  path: /api/categorias
+  methods: ['POST']
+
+category_patch:
+  controller: App\Controller\Api\CategoryController::patch
+  path: /api/categorias
+  methods: ['PATCH']
+
+category_delete:
+  controller: App\Controller\Api\CategoryController::delete
+  path: /api/categorias
+  methods: ['DELETE']

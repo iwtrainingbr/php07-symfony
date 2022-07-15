@@ -1,0 +1,19 @@
+vehicle_get:
+  controller: App\Controller\Api\VehicleController::get
+  path: /api/veiculos
+  methods: ['GET']
+
+vehicle_post:
+  controller: App\Controller\Api\VehicleController::post
+  path: /api/veiculos
+  methods: ['POST']
+
+vehicle_patch:
+  controller: App\Controller\Api\VehicleController::patch
+  path: /api/veiculos
+  methods: ['PATCH']
+
+vehicle_delete:
+  controller: App\Controller\Api\VehicleController::delete
+  path: /api/veiculos/{id}
+  methods: ['DELETE']

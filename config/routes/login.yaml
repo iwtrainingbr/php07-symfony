@@ -1,0 +1,3 @@
+login:
+  controller: App\Controller\LoginController::login
+  path: /autenticar
