@@ -1,0 +1,19 @@
+api_product_get:
+  path: /api/produtos
+  controller: App\Controller\Api\ProductController::get
+  methods: ['GET']
+
+api_product_post:
+  path: /api/produtos
+  controller: App\Controller\Api\ProductController::post
+  methods: ['POST']
+
+api_product_patch:
+  path: /api/produtos/{id}
+  controller: App\Controller\Api\ProductController::patch
+  methods: ['PATCH']
+
+api_product_delete:
+  path: /api/produtos/{id}
+  controller: App\Controller\Api\ProductController::delete
+  methods: ['DELETE']

@@ -14,11 +14,18 @@ class Product
     public int $id;
 
     #[ORM\Column(length: 50)]
-    public string $make;
+    public string $name;
 
     #[ORM\Column(length: 255)]
-    public string $model;
+    public string $description;
 
-    #[ORM\Column(type: 'integer', length: 4)]
-    public int $year;
+    #[ORM\Column(type: 'float')]
+    public float $price;
+
+    public function __construct(string $name, string $description, float $price)
+    {
+        $this->name = $name;
+        $this->description = $description;
+        $this->price = $price;
+    }
 }
